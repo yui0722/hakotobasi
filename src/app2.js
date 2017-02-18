@@ -234,28 +234,18 @@ var game2 = cc.Layer.extend({
             0); // thickness of wall
         world.addStaticShape(wallBottom);
 
-        this.addBody(240, -10, 480, 20, false, res.ground_png, SpriteTag.ground5);
-        //this.addBody(240, 310, 480, 20, false, res.ground_png, SpriteTag.ground);
-        this.addBody(-10, 120, 20, 450, false, res.ground2_png, SpriteTag.ground5);
-        this.addBody(520, 120, 20, 450, false, res.ground2_png, SpriteTag.ground5);
-        //this.addBody(240, 10, 480, 20, false, res.ground_png, SpriteTag.ground);
-        this.addBody(412, 100, 100, 20, false, res.ground4_png, SpriteTag.ground);
-        this.addBody(250, 200, 100, 20, false, res.ground4_png, SpriteTag.ground);
-        this.addBody(200, 100, 100, 20, false, res.ground4_png, SpriteTag.ground);
-        this.addBody(100, 10, 100, 20, false, res.ground4_png, SpriteTag.ground);
-        //this.addBody(240,10,480,20,false,res.ground_png,SpriteTag.ground);
-        //this.addBody(240,10,480,20,false,res.ground_png,SpriteTag.ground);
-        //this.addBody(204,32,24,24,true,res.brick1x1_png,SpriteTag.destroyable);
-        //this.addBody(276,32,24,24,true,res.brick1x1_png,SpriteTag.destroyable);
-        //this.addBody(240,56,96,24,true,res.brick4x1_png,SpriteTag.destroyable);
-        //this.addBody(240,80,48,24,true,res.brick2x1_png,SpriteTag.solid);
-        //this.addBody(228,104,72,24,true,res.brick3x1_png,SpriteTag.destroyable);
-        //this.addBody(240,140,96,48,true,res.brick4x2_png,SpriteTag.solid);
 
-        this.addBody(250, 226, 40, 36, false, res.hata_png, SpriteTag.hata2);
-        this.addBody(200, 140, 41, 38, true, res.teki1_png, SpriteTag.teki1);
-        this.addBody(412, 140, 41, 38, true, res.teki2_png, SpriteTag.teki2);
-        this.addBody(100, 15, 41, 38, true, res.totem_png, SpriteTag.totem);
+                this.addBody(240, -10, 480, 20, false, res.ground_png, SpriteTag.ground5);
+                this.addBody(-10, 120, 20, 450, false, res.ground2_png, SpriteTag.ground5);
+                this.addBody(520, 120, 20, 450, false, res.ground2_png, SpriteTag.ground5);
+                this.addBody(412, 100, 100, 20, false, res.ground4_png, SpriteTag.ground);
+                this.addBody(250, 200, 100, 20, false, res.ground4_png, SpriteTag.ground);
+                this.addBody(100, 100, 100, 20, false, res.ground4_png, SpriteTag.ground);
+                this.addBody(250, 100, 100, 20, false, res.ground4_png, SpriteTag.ground);
+                this.addBody(250, 225, 40, 36, false, res.hata_png, SpriteTag.hata);
+                this.addBody(100, 140, 41, 38, true, res.teki1_png, SpriteTag.teki1);
+                this.addBody(412, 140, 41, 38, true, res.teki2_png, SpriteTag.teki2);
+                this.addBody(250, 110, 41, 38, true, res.totem_png, SpriteTag.totem);
 
         this.scheduleUpdate();
         cc.eventManager.addListener(touchListener, this);
