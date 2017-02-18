@@ -301,7 +301,7 @@ var game2 = cc.Layer.extend({
         if (arbiter.a.name == SpriteTag.totem && arbiter.b.name == SpriteTag.ground) {
             cc.audioEngine.playEffect(res.landing_mp3);
         }
-        if (arbiter.a.name == SpriteTag.totem && arbiter.b.name == SpriteTag.hata2) {
+        if (arbiter.a.name == SpriteTag.totem && arbiter.b.name == SpriteTag.hata) {
             SceneAnime = cc.TransitionFade.create(1, new clearScene());
             cc.director.runScene(SceneAnime)
         }
